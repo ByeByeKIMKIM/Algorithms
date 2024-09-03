@@ -1,0 +1,15 @@
+the selection sort algorithm is easy to understand
+and implement, but it is quite inefficient. 
+
+The time complexity is quite bad because of the double for loop.
+The first loop through has (n-1) "things" (don't know the right vocab) to do
+The next loop has (n-2), all the way to 1
+If we add all these (n-1)+(n-2)+(n-3)+...+1
+This equals
+(n-1+1)*(n-1)/2 = n(n-1)/2
+This expression has order 2 (x^2), so the Big O of this sorting algorithm is
+O(n^2)
+
+The space complexity is O(1) (constant) because regardless of the size of the
+input array, the same amount of space is needed for storage variables like
+"min", "index", etc
